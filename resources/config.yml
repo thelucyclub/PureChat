@@ -8,7 +8,7 @@ enable-multiworld-support: false
 
 # This message will be shown replacing th {faction} tag when a player is not in any faction
 # - STRING
-custom-no-fac-message: "..."
+custom-no-fac-message: "No-Fac"
 
 # A list of all PurePerms groups
 groups:
@@ -23,10 +23,10 @@ groups:
     
     # You might also need to set 'pchat.colored.format' and 'pchat.colored.nametag' to players if you want to allow them to use colored chat and nametags
     # Use 'pchat.colored.chat' node to allow color codes for players in chat
-    default-chat: "{COLOR_YELLOW}{FORMAT_BOLD}[Guest]{COLOR_WHITE}{FORMAT_RESET} {display_name} {COLOR_GRAY}> {message}"
+    default-chat: "{COLOR_YELLOW}{FORMAT_BOLD}{display_name}{FORMAT_RESET}{COLOR_AQUA}:{FORMAT_ITALIC} {COLOR_RED}{message}"
     
     # Almost all of the tags can be applied to nametag formats except {message} tag
-    default-nametag: "{COLOR_YELLOW}{FORMAT_BOLD}[Guest]{COLOR_WHITE}{FORMAT_RESET} {display_name}"
+    default-nametag: "{COLOR_BLUE}{display_name}"
     worlds: [] 
   Admin:
     default-chat: "{COLOR_AQUA}{FORMAT_BOLD}[Admin]{COLOR_WHITE}{FORMAT_RESET} {display_name} {COLOR_GRAY}> {message}"
@@ -37,7 +37,7 @@ groups:
     default-nametag: "{COLOR_BLUE}{FORMAT_BOLD}[Owner]{COLOR_WHITE}{FORMAT_RESET} {display_name}"
     worlds: []
   OP: 
-    default-chat: "{COLOR_GREEN}{FORMAT_BOLD}[OP]{COLOR_WHITE}{FORMAT_RESET} {display_name} {COLOR_GRAY}> {message}"
-    default-nametag: "{COLOR_BLUE}{FORMAT_BOLD}[OP]{COLOR_WHITE}{FORMAT_RESET} {display_name}"
+    default-chat: "{COLOR_GREEN}{FORMAT_BOLD}[Operator]{COLOR_WHITE}{FORMAT_RESET} {display_name} {COLOR_GRAY}> {message}"
+    default-nametag: "{COLOR_BLUE}{FORMAT_BOLD}[Operator]{COLOR_WHITE}{FORMAT_RESET} {display_name}"
     worlds: []
 ...
